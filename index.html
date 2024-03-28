@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meteora</title>
+  <link rel="shortcut icon" href="./meteora-assets-main/assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="estilos.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <h1 class="m-0"><img class="d-block" src="./meteora-assets-main/assets/logo-meteora.png"
+            alt="logo da loja Meteora"></h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lojas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Novidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Promoção</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 rounded-0" type="search" placeholder="Digite o produto" aria-label="Search">
+          <button class="btn btn-outline-light rounded-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="img-fluid d-md-none d-xl-none" src="./meteora-assets-main/assets/Mobile/banner1-mobile.png"
+          alt="modelo feminina usando roupa rosa">
+        <img class="img-fluid d-none d-md-block d-xl-none" src="./meteora-assets-main/assets/Tablet/banner1-tablet.png"
+          alt="modelo feminina usando roupa rosa">
+        <img class="img-fluid d-none d-xl-block w-100" src="./meteora-assets-main/assets/Desktop/banner1-desktop.png"
+          alt="">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid d-md-none d-xl-none" src="./meteora-assets-main/assets/Mobile/banner2-mobile.png" alt="">
+        <img class="img-fluid d-none d-md-block d-xl-none" src="./meteora-assets-main/assets/Tablet/banner2-tablet.png"
+          alt="">
+        <img class="img-fluid d-none d-xl-block w-100" src="./meteora-assets-main/assets/Desktop/banner2-desktop.png"
+          alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>COLEÇÃO ATEMPORAL</h5>
+          <p>Estilo e qualidade para durar</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid d-md-none d-xl-none" src="./meteora-assets-main/assets/Mobile/banner3-mobile.png" alt="">
+        <img class="img-fluid d-none d-md-block d-xl-none" src="./meteora-assets-main/assets/Tablet/banner3-tablet.png"
+          alt="">
+        <img class="img-fluid d-none d-xl-block w-100" src="./meteora-assets-main/assets/Desktop/banner3-desktop.png"
+          alt="">
+        </svg>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>COLEÇÃO ATEMPORAL</h5>
+          <p>Alto impacto visual, baixo impacto ambiental</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h2 class="text-center my-3 my-xl-5">Busque por categoria:</h2>
+
+  <div class="container row mx-auto g-4">
+
+    <div class="col-6 col-md-4 col-xxl-2">
+      <div class="card">
+        <img class="d-md-none d-block" src="./meteora-assets-main/assets/Mobile/categorias/categoria-camiseta.png"
+          alt="camiseta">
+        <img class="d-none d-md-block d-xl-none"
+          src="./meteora-assets-main/assets/Tablet/categorias/categoria-camiseta.png" alt="camiseta">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Desktop/categorias/categoria-camiseta.png"
+          alt="camiseta">
+        <div class="card-header bg-black text-bg-dark">
+          <p class="text-center card-text">
+            Camisetas
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-xxl-2">
+      <div class="card">
+        <img class="d-md-none d-block" src="./meteora-assets-main/assets/Mobile/categorias/categoria-bolsas.png"
+          alt="camiseta">
+        <img class="d-none d-md-block d-xl-none"
+          src="./meteora-assets-main/assets/Tablet/categorias/categoria-bolsas.png" alt="camiseta">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Desktop/categorias/categoria-bolsa.png"
+          alt="camiseta">
+        <div class="card-header bg-black text-bg-dark">
+          <p class="text-center card-text">
+            Bolsas
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-xxl-2">
+      <div class="card">
+        <img class="d-md-none d-block" src="./meteora-assets-main/assets/Mobile/categorias/categoria-calcados.png"
+          alt="camiseta">
+        <img class="d-none d-md-block d-xl-none"
+          src="./meteora-assets-main/assets/Tablet/categorias/categoria-calcados.png" alt="camiseta">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Desktop/categorias/categoria-calcados.png"
+          alt="camiseta">
+        <div class="card-header bg-black text-bg-dark">
+          <p class="text-center card-text">
+            Calçados
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-xxl-2">
+      <div class="card">
+        <img class="d-md-none d-block" src="./meteora-assets-main/assets/Mobile/categorias/categoria-calcas.png"
+          alt="camiseta">
+        <img class="d-none d-md-block d-xl-none"
+          src="./meteora-assets-main/assets/Tablet/categorias/categoria-calcas.png" alt="camiseta">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Desktop/categorias/categoria-calcas.png"
+          alt="camiseta">
+        <div class="card-header bg-black text-bg-dark">
+          <p class="text-center card-text">
+            Calças
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-6 col-md-4 col-xxl-2">
+      <div class="card">
+        <img class="d-md-none d-block" src="./meteora-assets-main/assets/Mobile/categorias/categoria-casacos.png"
+          alt="camiseta">
+        <img class="d-none d-md-block d-xl-none"
+          src="./meteora-assets-main/assets/Tablet/categorias/categoria-casacos.png" alt="camiseta">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Desktop/categorias/categoria-casacos.png"
+          alt="camiseta">
+        <div class="card-header bg-black text-bg-dark">
+          <p class="text-center card-text">
+            Casacos
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-xxl-2">
+      <div class="card">
+        <img class="d-md-none d-block" src="./meteora-assets-main/assets/Mobile/categorias/categoria-oculos.png"
+          alt="camiseta">
+        <img class="d-none d-md-block d-xl-none"
+          src="./meteora-assets-main/assets/Tablet/categorias/categoria-oculos.png" alt="camiseta">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Desktop/categorias/categoria-oculos.png"
+          alt="camiseta">
+        <div class="card-header bg-black text-bg-dark">
+          <p class="text-center card-text">
+            Óculos
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-center my-3 my-xl-5">Produtos que estão bombando!</h2>
+
+  <div class="container row mx-auto g-4">
+    <div class="col-12 col-md-6 col-xl-4 pb-4">
+      <div class="card">
+        <img class="d-block d-md-none" src="./meteora-assets-main/assets/Mobile/produtos/camiseta.png"
+          alt="camiseta">
+        <img class="d-none d-md-block d-xl-none" src="./meteora-assets-main/assets/Tablet/produtos/camiseta.png"
+          alt="camiseta">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Desktop/produtos/camiseta.png"
+          alt="camiseta">
+        <div class="card-body">
+          <h5 class="card-title">Camiseta conforto</h5>
+          <p class="card-text">Multicores e tamanhos. Tecido 100% algodão, fresquinho para o verão!</p>
+          <p>R$70,00</p>
+          <a href="#" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4 pb-4">
+      <div class="card">
+        <img class="d-block d-md-none" src="./meteora-assets-main/assets/Mobile/produtos/calca.png"
+          alt="calça de alfaiataria">
+        <img class="d-none d-md-block d-xl-none" src="./meteora-assets-main/assets/Mobile/produtos/calca.png"
+          alt="calça de alfaiataria">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Mobile/produtos/calca.png"
+          alt="calça de alfaiataria">
+        <div class="card-body">
+          <h5 class="card-title">Calça alfaiataria</h5>
+          <p class="card-text">Modelo wide leg alfaiataria em linho. Uma peça para a vida toda!.</p>
+          <p>R$180,00</p>
+          <a href="#" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4 pb-4">
+      <div class="card">
+        <img class="d-block d-md-none" src="./meteora-assets-main/assets/Mobile/produtos/bolsa.png"
+          alt="bolsa de couro">
+        <img class="d-none d-md-block d-xl-none" src="./meteora-assets-main/assets/Mobile/produtos/bolsa.png"
+          alt="bolsa de couro">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Mobile/produtos/bolsa.png"
+          alt="bolsa de couro">
+        <div class="card-body">
+          <h5 class="card-title">Bolsa coringa</h5>
+          <p class="card-text">Bolsa camel em couro sintético de alta duração para usar em qualquer ocasião!</p>
+          <p>R$200,00</p>
+          <a href="#" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4 pb-4">
+      <div class="card">
+        <img class="d-block d-md-none" src="./meteora-assets-main/assets/Mobile/produtos/jaqueta-jeans.png"
+          alt="jaqueta-jeans.">
+        <img class="d-none d-md-block d-xl-none" src="./meteora-assets-main/assets/Mobile/produtos/jaqueta-jeans.png"
+          alt="jaqueta-jeans.">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Mobile/produtos/jaqueta-jeans.png"
+          alt="jaqueta-jeans.">
+        <div class="card-body">
+          <h5 class="card-title">Jaqueta Jeans</h5>
+          <p class="card-text">Modelo unissex oversized com gola de camurça. Atemporal e autêntica.</p>
+          <p>R$150,00</p>
+          <a href="#" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4 pb-4">
+      <div class="card">
+        <img class="d-block d-md-none" src="./meteora-assets-main/assets/Mobile/produtos/oculos.png"
+          alt="Óculos.">
+        <img class="d-none d-md-block d-xl-none" src="./meteora-assets-main/assets/Mobile/produtos/oculos.png"
+          alt="Óculos.">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Mobile/produtos/oculos.png"
+          alt="Óculos.">
+        <div class="card-body">
+          <h5 class="card-title">Óculos redondo</h5>
+          <p class="card-text">Armação metálica em grafite com lentes arredondadas. Sem erro.</p>
+          <p>R$120,00</p>
+          <a href="#" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4 pb-4">
+      <div class="card">
+        <img class="d-block d-md-none" src="./meteora-assets-main/assets/Mobile/produtos/tenis.png"
+          alt="Tênis.">
+        <img class="d-none d-md-block d-xl-none" src="./meteora-assets-main/assets/Mobile/produtos/tenis.png"
+          alt="Tênis.">
+        <img class="d-none d-xl-block" src="./meteora-assets-main/assets/Mobile/produtos/tenis.png"
+          alt="Tênis.">
+        <div class="card-body">
+          <h5 class="card-title">Tênis Chuncky</h5>
+          <p class="card-text">Snicker casual com solado alto e modelagem robusta. Modelo unissex</p>
+          <p>R$300,00</p>
+          <a href="#" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="pb-4 bg-black text-bg-dark">
+
+    <h2 class="text-center verde-limao p-3">Conheça todas as nossas facilidades</h2>
+    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3">
+
+      <div class="divs-facilidade d-flex align-items-center">
+        <div><i class="verde-limao bi bi-x-diamond fs-1"></i></div>
+        <div>
+          <div class="verde-limao texto-maior ms-3 mb-1">PAGUE PELO PIX</div>
+          <div class="verde-limao texto-menor ms-3">Ganhe 50%off em
+            pagamentos via PIX
+          </div>
+        </div>
+      </div>
+
+      <div class="divs-facilidade d-flex align-items-center">
+        <div><i class="verde-limao bi bi-arrow-repeat fs-1"></i></div>
+        <div>
+          <div class="verde-limao texto-maior ms-3 mb-1">TROCA GRATIS</div>
+          <div class="verde-limao texto-menor ms-3">Fique livre para trocar
+            em até 30 dias
+          </div>
+        </div>
+      </div>
+
+      <div class="divs-facilidade d-flex align-items-center">
+        <div><i class="verde-limao bi bi-flower1 fs-1"></i></div>
+        <div>
+          <div class="verde-limao texto-maior ms-3 mb-1">SUSTENTABILIDADE</div>
+          <div class="verde-limao texto-menor ms-3">Moda responsável que
+            respeita o meio ambiente
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <form class="container border secondary my-3 my-xl-5 p-3 text-center mx-auto">
+    <h5>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h5>
+    <div class="input-group my-3 d-flex">
+      <input type="email" class="form-control border-secondary rounded-0" placeholder="Digite seu e-mail"
+        aria-label="Digite seu e-mail" aria-describedby="button-addon2" />
+      <button type="button" id="button-addon2">Enviar</button>
+    </div>
+  </form>
+
+  <footer class="text-center bg-black text-bg-dark">
+    <p class="py-3">2024 <i class="bi bi-c-circle"></i> Desenvolvido por <a
+        href="https://github.com/luizmiguelbarros">@luizmiguelbarros</a>, projeto sem fins lucrativos</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
